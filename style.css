@@ -12,23 +12,28 @@ body {
 }
 
 header {
+    position: sticky;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding: 0 32px;
+    width: 100%;
 }
-nav {
-    display: flex; 
-    justify-content: space-between;
+
+.navlinks {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
     font-family: var(--font);
-    justify-self: center;
 }
 
 nav a, li {
-    display: inline-block;
+    display:inline;
     color: inherit;
     text-decoration: none;
 }
